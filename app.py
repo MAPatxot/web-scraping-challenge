@@ -19,7 +19,8 @@ app = Flask(__name__)
 # mongo = PyMongo(app, uri="mongodb://localhost:27017/mars")
 
 # Elie said to try using this, might solve "jinja error" 
-app.config["MONGO_URI"] = "mongodb://localhost:27017/mission_to_mars"
+# app.config["MONGO_URI"] = "mongodb://localhost:27017/mission_to_mars"
+app.config["MONGO_URI"] = "mongodb://localhost:27017/mars"
 mongo = PyMongo(app)
 
 # conn = "mongodb://localhost:27017/mission_to_mars"
